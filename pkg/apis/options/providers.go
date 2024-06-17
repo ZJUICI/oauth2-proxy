@@ -84,6 +84,9 @@ type Provider struct {
 	// The code challenge method
 	CodeChallengeMethod string `json:"code_challenge_method,omitempty"`
 
+	// allow additional claims to be extracted from the ID Token
+	AllowAdditionalClaims []string `json:"allowAdditionalClaims,omitempty"`
+
 	// URL to call to perform backend logout, `{id_token}` would be replaced by the actual `id_token` if available in the session
 	BackendLogoutURL string `json:"backendLogoutURL"`
 }
