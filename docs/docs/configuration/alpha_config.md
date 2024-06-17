@@ -441,6 +441,7 @@ Provider holds all configuration for a single provider
 | `allowedGroups` | _[]string_ | AllowedGroups is a list of restrict logins to members of this group |
 | `code_challenge_method` | _string_ | The code challenge method |
 | `backendLogoutURL` | _string_ | URL to call to perform backend logout, `{id_token}` would be replaced by the actual `id_token` if available in the session |
+| `allowAdditionalClaims` | _[]string_ | Allows additional claims to be obtained from the `token`. Not all providers implement this feature, and it is currently only available for `OIDCProvider` and `AzureProvider`. |
 
 ### ProviderType
 #### (`string` alias)
